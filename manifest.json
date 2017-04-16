@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Easy Slack",
+  "description": "Makes Slack easier",
+  "version": "1.0",
+
+  "content_scripts": [{
+    "js": ["easy.js"],
+    "matches": ["https://*.slack.com/*"]
+  }],
+  "permissions": [
+    "tabs", "https://*.slack.com/*"
+  ]
+}
